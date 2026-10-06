@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+
+<html lang="hi"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-primary-fixed-variant":"#0c5216","error":"#ba1a1a","surface":"#fbf9f4","on-secondary-fixed":"#2f1500","surface-container":"#efeee9","secondary":"#904d00","on-tertiary-fixed-variant":"#005312","primary":"#00450d","surface-container-high":"#e9e8e3","surface-tint":"#2a6b2c","on-background":"#1b1c19","on-tertiary":"#ffffff","background":"#fbf9f4","tertiary-fixed-dim":"#88d982","inverse-primary":"#91d78a","on-surface-variant":"#41493e","on-error":"#ffffff","on-secondary":"#ffffff","tertiary":"#00450d","outline-variant":"#c0c9bb","error-container":"#ffdad6","on-primary":"#ffffff","secondary-container":"#fe932c","outline":"#717a6d","surface-bright":"#fbf9f4","tertiary-fixed":"#a3f69c","on-primary-container":"#90d689","secondary-fixed-dim":"#ffb77d","inverse-surface":"#30312d","surface-dim":"#dbdad5","surface-container-low":"#f5f4ee","on-tertiary-container":"#86d881","tertiary-container":"#055f18","secondary-fixed":"#ffdcc3","on-secondary-container":"#663500","surface-container-highest":"#e4e2dd","primary-container":"#1b5e20","primary-fixed-dim":"#91d78a","on-secondary-fixed-variant":"#6e3900","on-error-container":"#93000a","surface-variant":"#e4e2dd","surface-container-lowest":"#ffffff","primary-fixed":"#acf4a4","on-tertiary-fixed":"#002204","on-surface":"#1b1c19","on-primary-fixed":"#002203","inverse-on-surface":"#f2f1eb"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xl":"2.5rem","space-md":"1rem","gutter-tablet":"1.5rem","space-xs":"0.25rem","gutter":"1rem","margin-tablet":"2rem","margin":"1rem","space-lg":"1.5rem","margin-desktop":"3rem","gutter-desktop":"2rem","space-sm":"0.5rem"},"fontFamily":{"label-md":["Noto Sans"],"body-lg":["Noto Sans"],"headline-lg":["Noto Sans"],"body-md":["Noto Sans"],"headline-md":["Noto Sans"],"body-sm":["Noto Sans"],"headline-sm":["Noto Sans"],"label-lg":["Noto Sans"],"headline-lg-mobile":["Noto Sans"],"headline-xl-mobile":["Noto Sans"],"label-sm":["Noto Sans"],"headline-xl":["Noto Sans"]},"fontSize":{"label-md":["0.875rem",{"lineHeight":"1.25rem","letterSpacing":"0.01em","fontWeight":"600"}],"body-lg":["1.125rem",{"lineHeight":"1.75rem","fontWeight":"400"}],"headline-lg":["1.875rem",{"lineHeight":"2.375rem","letterSpacing":"-0.01em","fontWeight":"600"}],"body-md":["1rem",{"lineHeight":"1.5rem","fontWeight":"400"}],"headline-md":["1.375rem",{"lineHeight":"1.875rem","fontWeight":"600"}],"body-sm":["0.875rem",{"lineHeight":"1.375rem","fontWeight":"400"}],"headline-sm":["1.125rem",{"lineHeight":"1.625rem","fontWeight":"600"}],"label-lg":["1rem",{"lineHeight":"1.5rem","fontWeight":"600"}],"headline-lg-mobile":["1.5rem",{"lineHeight":"2rem","letterSpacing":"0em","fontWeight":"600"}],"headline-xl-mobile":["1.75rem",{"lineHeight":"2.25rem","letterSpacing":"-0.01em","fontWeight":"700"}],"label-sm":["0.75rem",{"lineHeight":"1rem","letterSpacing":"0.02em","fontWeight":"700"}],"headline-xl":["2.25rem",{"lineHeight":"2.75rem","letterSpacing":"-0.02em","fontWeight":"700"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface/95 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="bg-surface-container-high px-gutter-desktop py-space-xs hidden md:block"><div class="max-w-[1280px] mx-auto flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant"><span>🌾 राष्ट्रीय कृषि विकास एवं AI आधारित तकनीकी सहायता केंद्र</span><div class="flex items-center gap-space-lg"><span>इमरजेंसी हेल्पलाइन: <strong class="text-primary font-bold">1800-180-1551 (टोल-फ्री)</strong></span><span>Groq LPU: <span class="text-tertiary-container font-bold">⚡ 0.18s Ultra-Low Latency</span></span></div></div></div><div class="h-20 max-w-[1280px] mx-auto px-margin md:px-gutter-desktop flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm shrink-0"><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-primary tracking-tight">🌾 AI किसान सहायक</span><span class="hidden sm:inline-block px-space-xs py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">Groq LPU™ Powered (openai/gpt-oss-120b)</span></div><span class="font-label-sm text-label-sm text-on-surface-variant hidden sm:block">सम्पूर्ण ग्रामीण कृषि व फसल सलाहकार पोर्टल</span></div></div><nav class="hidden xl:flex items-center gap-space-xs" data-active-classes="bg-primary-container text-on-primary font-bold rounded-lg shadow-sm"><a aria-current="page" class="px-space-sm py-space-xs transition-colors bg-primary-container text-on-primary font-bold rounded-lg shadow-sm" data-path="crop-advisory" href="#">फसल सलाह (Crop Advisory)</a><a class="px-space-sm py-space-xs rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="pest-and-disease" href="#">कीट एवं रोग (Pest &amp; Disease)</a><a class="px-space-sm py-space-xs rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="irrigation-and-nutrients" href="#">सिंचाई व खाद (Irrigation &amp; Nutrients)</a><a class="px-space-sm py-space-xs rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="agri-business" href="#">कृषि व्यवसाय (Agri-Business)</a><a class="px-space-sm py-space-xs rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="govt-schemes" href="#">सरकारी योजनाएं (Govt Schemes)</a><a class="px-space-sm py-space-xs rounded-lg font-label-md text-label-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" data-path="architecture-and-code" href="#">सुरक्षित कोड (Architecture &amp; Code)</a></nav><div class="flex items-center gap-space-sm shrink-0"><button class="hidden sm:flex items-center justify-center px-space-sm py-space-xs rounded-lg bg-surface-container font-label-sm text-label-sm text-on-surface hover:bg-surface-container-high hover:text-on-surface transition-colors" type="button">हिंदी | English</button><a class="hidden lg:flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg bg-surface-container text-secondary font-label-sm text-label-sm hover:bg-surface-container-high hover:text-secondary-container transition-colors" href="tel:18001801551"><span class="material-symbols-outlined text-[18px]">call</span><span>1800-180-1551</span></a><button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-lg bg-secondary text-on-secondary font-label-md text-label-md hover:bg-secondary-container hover:text-on-secondary-container transition-colors shadow-sm" type="button"><span class="material-symbols-outlined text-[20px]">folder_zip</span><span class="font-bold">ZIP डाउनलोड करें</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-14rem)]"><div class="flex flex-col w-full">
+<!-- Top Ambient Notice Banner -->
+<div class="w-full bg-surface-container-high py-space-xs px-margin md:px-gutter-desktop">
+<div class="max-w-[1280px] mx-auto flex flex-wrap items-center justify-between gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<div class="flex items-center gap-space-xs">
+<span class="inline-flex w-2 h-2 rounded-full bg-tertiary-container animate-pulse"></span>
+<span class="font-bold text-primary">Groq LPU™ Ultra-Fast Active:</span>
+<span>openai/gpt-oss-120b मॉडल (औसत प्रतिक्रिया समय: 0.18s)</span>
+</div>
+<div class="flex items-center gap-space-md">
+<span class="hidden sm:inline">📞 किसान कॉल सेंटर (24x7): <strong class="text-primary">1800-180-1551</strong></span>
+<span class="bg-surface-container px-space-xs py-0.5 rounded text-on-surface font-semibold">v1.0.0 Production Ready</span>
+</div>
+</div>
+</div>
+<!-- Hero & Download Callout Section -->
+<section class="relative w-full overflow-hidden bg-gradient-to-b from-surface-container-low via-surface to-surface pb-space-xl pt-space-lg">
+<div class="max-w-[1280px] mx-auto px-margin md:px-gutter-desktop">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Left: Hero Headline & Description -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<div class="inline-flex items-center gap-space-xs self-start px-space-sm py-space-xs rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+<span>ICAR एवं कृषि विज्ञान केंद्र (KVK) वैज्ञानिक मानकों पर आधारित</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight leading-tight">
+            🌾 AI किसान सहायक — <span class="text-primary font-bold">भारतीय किसानों</span> के लिए संपूर्ण कृषि एवं फसल सलाहकार AI
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+            अपनी फसल, गाँव/जिला, मिट्टी, सिंचाई और कीट-रोग समस्या दर्ज करें और <strong class="text-on-surface font-semibold">Groq LPU™ (120+ Tokens/sec)</strong> संचालित <code class="bg-surface-container-highest px-space-xs py-0.5 rounded text-primary font-bold">openai/gpt-oss-120b</code> मॉडल से तुरंत वैज्ञानिक व व्यावहारिक हिंदी सलाह पाएं।
+          </p>
+<!-- Stat Badges Bento Row -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-xs pt-space-xs">
+<div class="bg-surface-container-lowest p-space-sm rounded-lg shadow-sm flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary font-bold">⚡ 120 Tokens/sec</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">अल्ट्रा-फास्ट गति</span>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-lg shadow-sm flex flex-col">
+<span class="font-label-sm text-label-sm text-primary font-bold">🌱 ICAR व KVK</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">प्रमाणित वैज्ञानिक स्तर</span>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-lg shadow-sm flex flex-col">
+<span class="font-label-sm text-label-sm text-tertiary-container font-bold">🔐 100% Zero Leak</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">सुरक्षित सर्वर प्रॉक्सी</span>
+</div>
+<div class="bg-surface-container-lowest p-space-sm rounded-lg shadow-sm flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface font-bold">📱 Mobile Ready</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">धूप व कम नेटवर्क अनुकूल</span>
+</div>
+</div>
+</div>
+<!-- Right: Prominent Full ZIP Download Card -->
+<div class="lg:col-span-5 flex flex-col">
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-md flex flex-col gap-space-md relative overflow-hidden">
+<div class="absolute top-0 right-0 w-28 h-28 bg-primary-fixed/20 rounded-bl-full pointer-events-none"></div>
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs">
+<div class="w-10 h-10 rounded-lg bg-primary-container text-on-primary flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-[24px]">folder_zip</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Download Package</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">📦 AI किसान सहायक</h3>
+</div>
+</div>
+<span class="px-space-xs py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-bold">v1.0.0 Ready</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Node.js + Express + Groq SDK का पूर्ण प्रोडक्शन स्टैक। API Key शून्य-लीकेज सर्वर प्रॉक्सी के साथ तुरंत अपने लैपटॉप या VPS सर्वर पर चलाएं।
+            </p>
+<!-- File Details List -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex flex-col gap-space-xs font-body-sm text-body-sm">
+<div class="flex justify-between items-center text-on-surface">
+<span>📁 शामिल फाइलें:</span>
+<span class="font-semibold">server.js, /api/chat.js, UI, .env</span>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant">
+<span>⚡ इंजन:</span>
+<span class="font-mono text-label-sm font-semibold">GroqCloud (gpt-oss-120b)</span>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant">
+<span>🔐 सुरक्षा:</span>
+<span class="text-tertiary-container font-semibold">Server-side process.env</span>
+</div>
+</div>
+<!-- Terminal Run Snippet Inside Download Box -->
+<div class="bg-inverse-surface rounded-lg p-space-sm font-mono text-label-sm text-inverse-on-surface flex flex-col gap-1">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-[11px] pb-1">
+<span>⚡ 3-कदम में चलाएं</span>
+<button class="text-primary-fixed hover:text-white flex items-center gap-0.5" onclick="navigator.clipboard.writeText('git clone https://github.com/example/ai-kisan-sahayak.git\ncd ai-kisan-sahayak &amp;&amp; npm install\nnpm start'); alert('कमांड कॉपी हो गया!');" type="button">
+<span class="material-symbols-outlined text-[14px]">content_copy</span> कॉपी
+                </button>
+</div>
+<div class="text-primary-fixed">$ cd ai-kisan-sahayak &amp;&amp; npm install</div>
+<div class="text-inverse-on-surface">$ cp .env.example .env # Groq Key जोड़ें</div>
+<div class="text-secondary-fixed-dim">$ npm start ➔ http://localhost:3000</div>
+</div>
+<!-- Download Button -->
+<a class="flex items-center justify-center gap-space-xs w-full py-space-sm px-space-md rounded-lg bg-secondary text-on-secondary hover:bg-secondary-container hover:text-on-secondary-container transition-all font-label-lg text-label-lg shadow-sm font-bold text-center" href="#code-architecture">
+<span class="material-symbols-outlined text-[20px]">download</span>
+<span>पूरा ZIP डाउनलोड करें (v1.0.0 Ready-to-Run)</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Core: 2-Column AI किसान सलाहकार परामर्श केंद्र -->
+<section class="w-full py-space-xl bg-surface">
+<div class="max-w-[1280px] mx-auto px-margin md:px-gutter-desktop">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-lg gap-space-sm">
+<div>
+<div class="flex items-center gap-space-xs text-primary font-label-md text-label-md uppercase tracking-wider font-bold">
+<span class="material-symbols-outlined text-[20px]">psychology</span>
+<span>सजीव परामर्श प्रणाली (Live Inference)</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-space-xs">
+            AI किसान सलाहकार परामर्श केंद्र
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            अपनी फसल और खेत का विवरण भरें, या माइक्रोफ़ोन दबाकर हिंदी में बोलें।
+          </p>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container px-space-sm py-space-xs rounded-full">
+<span class="inline-block w-2.5 h-2.5 rounded-full bg-primary animate-ping"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Groq Engine Status: 100% Online (Ready)</span>
+</div>
+</div>
+<!-- 2-Column Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- Left Column: किसान इनपुट फॉर्म (Farmer Input Console) -->
+<div class="lg:col-span-6 bg-surface-container-lowest p-space-md md:p-space-lg rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary">edit_note</span>
+<span>किसान इनपुट कंसोल (Farmer Input)</span>
+</h3>
+<span class="font-label-sm text-label-sm bg-surface-container px-space-xs py-0.5 rounded text-on-surface-variant">Step 1 of 2</span>
+</div>
+<!-- Crop Quick Selector -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface flex items-center justify-between">
+<span>🌾 मुख्य फसल चुनें (Select Crop):</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">8 मुख्य फसलें</span>
+</label>
+<div class="grid grid-cols-4 sm:grid-cols-4 gap-space-xs" id="cropSelector">
+<button class="crop-btn active-crop py-space-xs px-1 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md flex flex-col items-center justify-center transition-all" onclick="selectCrop('गेहूं (Wheat)', this)" type="button">
+<span class="text-[18px]">🌾</span>
+<span class="text-xs truncate w-full text-center">गेहूं</span>
+</button>
+<button class="crop-btn py-space-xs px-1 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high flex flex-col items-center justify-center transition-all" onclick="selectCrop('धान (Paddy)', this)" type="button">
+<span class="text-[18px]">🌱</span>
+<span class="text-xs truncate w-full text-center">धान</span>
+</button>
+<button class="crop-btn py-space-xs px-1 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high flex flex-col items-center justify-center transition-all" onclick="selectCrop('कपास (Cotton)', this)" type="button">
+<span class="text-[18px]">☁️</span>
+<span class="text-xs truncate w-full text-center">कपास</span>
+</button>
+<button class="crop-btn py-space-xs px-1 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high flex flex-col items-center justify-center transition-all" onclick="selectCrop('सरसों (Mustard)', this)" type="button">
+<span class="text-[18px]">🌼</span>
+<span class="text-xs truncate w-full text-center">सरसों</span>
+</button>
+<button class="crop-btn py-space-xs px-1 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high flex flex-col items-center justify-center transition-all" onclick="selectCrop('मक्का (Corn)', this)" type="button">
+<span class="text-[18px]">🌽</span>
+<span class="text-xs truncate w-full text-center">मक्का</span>
+</button>
+<button class="crop-btn py-space-xs px-1 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high flex flex-col items-center justify-center transition-all" onclick="selectCrop('आलू (Potato)', this)" type="button">
+<span class="text-[18px]">🥔</span>
+<span class="text-xs truncate w-full text-center">आलू</span>
+</button>
+<button class="crop-btn py-space-xs px-1 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high flex flex-col items-center justify-center transition-all" onclick="selectCrop('चना (Gram)', this)" type="button">
+<span class="text-[18px]">🌰</span>
+<span class="text-xs truncate w-full text-center">चना</span>
+</button>
+<button class="crop-btn py-space-xs px-1 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high flex flex-col items-center justify-center transition-all" onclick="selectCrop('गन्ना (Sugarcane)', this)" type="button">
+<span class="text-[18px]">🎋</span>
+<span class="text-xs truncate w-full text-center">गन्ना</span>
+</button>
+</div>
+<input id="selectedCropInput" type="hidden" value="गेहूं (Wheat)"/>
+</div>
+<!-- Location Field -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface flex items-center justify-between">
+<span>📍 गाँव व जिला (Village &amp; District):</span>
+<button class="font-label-sm text-label-sm text-primary flex items-center gap-0.5 hover:underline" onclick="autoDetectLocation()" type="button">
+<span class="material-symbols-outlined text-[14px]">my_location</span> GPS से खोजें
+              </button>
+</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-3.5 text-on-surface-variant text-[20px]">location_on</span>
+<input class="w-full pl-10 pr-space-md py-space-xs rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-primary shadow-inner" id="farmerLocation" placeholder="उदा. ग्राम-सोनीपत, जिला-करनाल (हरियाणा)" type="text" value="ग्राम-पिपरिया, जिला-होशंगाबाद (मध्य प्रदेश)"/>
+</div>
+</div>
+<!-- Soil Type & Irrigation Source (2 columns) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface">🟤 मिट्टी का प्रकार (Soil Type):</label>
+<select class="w-full px-space-sm py-space-xs rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:outline-none" id="farmerSoil">
+<option selected="" value="जलोढ़ / दोमट उपजाऊ मिट्टी">जलोढ़ / दोमट (Alluvial/Loam)</option>
+<option value="काली कपासी भारी मिट्टी">काली कपासी (Black Cotton)</option>
+<option value="लाल / रेतीली दोमट">लाल / रेतीली (Red/Sandy)</option>
+<option value="पीली चिकनी मिट्टी">पीली चिकनी (Yellow Clay)</option>
+</select>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface">💧 सिंचाई स्रोत (Irrigation):</label>
+<select class="w-full px-space-sm py-space-xs rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:outline-none" id="farmerIrrigation">
+<option selected="" value="नलकूप / बोरवेल (Tube-well)">नलकूप / बोरवेल</option>
+<option value="नहरी पानी (Canal)">नहरी पानी (Canal)</option>
+<option value="ड्रिप / स्प्रिंकलर फव्वारा">ड्रिप / स्प्रिंकलर</option>
+<option value="केवल वर्षा आधारित (Rainfed)">वर्षा आधारित (बारानी)</option>
+</select>
+</div>
+</div>
+<!-- Problem Question Textarea with Voice Input -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface">
+                📝 वर्तमान समस्या या प्रश्न लिखें:
+              </label>
+<button class="px-space-sm py-1 rounded-full bg-secondary-fixed text-on-secondary-container font-label-sm text-label-sm font-bold flex items-center gap-1 hover:bg-secondary-fixed-dim transition-colors" id="voiceBtn" onclick="toggleVoiceInput()" type="button">
+<span class="material-symbols-outlined text-[16px]">mic</span>
+<span id="voiceText">🎙️ बोलकर पूछें (Hindi Voice)</span>
+</button>
+</div>
+<textarea class="w-full p-space-sm rounded-lg bg-surface-container-low text-on-surface font-body-md text-body-md focus:bg-surface-container-lowest focus:outline-none focus:ring-2 focus:ring-primary shadow-inner" id="farmerQuery" placeholder="उदा. गेहूं की 35 दिन की फसल है, कल्ले कम फूट रहे हैं और निचली पत्तियां पीली पड़ रही हैं। यूरिया, जिंक और खरपतवार नियंत्रण के लिए सही मार्गदर्शन दें।" rows="3">गेहूं की बुवाई के 35 दिन हुए हैं। कल्ले कम निकल रहे हैं, कुछ पत्तियां पीली हो रही हैं। यूरिया, जिंक की सही मात्रा और पीला रतुआ से बचाव का वैज्ञानिक उपाय बताएं।</textarea>
+</div>
+<!-- Quick Preset Chips -->
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant">त्वरित विषय क्लिक करें (Quick Presets):</span>
+<div class="flex flex-wrap gap-space-xs">
+<button class="px-space-xs py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-colors" onclick="setPreset('कीट प्रकोप: तना छेदक व इल्ली का जैविक व कीटनाशक उपचार क्या है?')" type="button">
+                🐛 कीट व इल्ली प्रकोप
+              </button>
+<button class="px-space-xs py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-colors" onclick="setPreset('सिंचाई समय-सारिणी: CRI अवस्था और गाभा अवस्था में पानी देने का नियम क्या है?')" type="button">
+                💧 सिंचाई समय-सारिणी
+              </button>
+<button class="px-space-xs py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-colors" onclick="setPreset('खाद व पोषण: प्रति एकड़ नीम कोटेड यूरिया, DAP और जिंक सल्फेट का सही डोज बताएं।')" type="button">
+                🌿 खाद व पोषण मात्रा
+              </button>
+<button class="px-space-xs py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-colors" onclick="setPreset('कम लागत कृषि व्यवसाय: खेत के साथ वर्मीकम्पोस्ट या मशरूम से हर महीने अतिरिक्त आय कैसे करें?')" type="button">
+                💰 कम लागत कृषि व्यवसाय
+              </button>
+<button class="px-space-xs py-1 rounded-full bg-surface-container text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-colors" onclick="setPreset('PM-KISAN और किसान क्रेडिट कार्ड (KCC) योजना का 4% ब्याज पर लाभ कैसे लें?')" type="button">
+                🏛️ PM-KISAN व KCC योजना
+              </button>
+</div>
+</div>
+<!-- Primary Submit Button -->
+<button class="w-full py-space-sm px-space-md rounded-lg bg-primary text-on-primary hover:bg-primary-container transition-all font-label-lg text-label-lg font-bold flex items-center justify-center gap-space-xs shadow-md" id="generateBtn" onclick="runAiInference()" type="button">
+<span class="material-symbols-outlined text-[22px]">psychology</span>
+<span>🌾 Groq AI से तुरंत सटीक समाधान प्राप्त करें (0.2s ⚡)</span>
+</button>
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm pt-space-xs">
+<span>🔒 सुरक्षित: शून्य डेटा संग्रह</span>
+<span>⚡ मॉडल: openai/gpt-oss-120b</span>
+</div>
+</div>
+<!-- Right Column: Live AI Kisan Sahayak Output (सजीव AI रिपोर्ट कार्ड) -->
+<div class="lg:col-span-6 flex flex-col gap-space-md">
+<div class="bg-surface-container-lowest rounded-xl p-space-md md:p-space-lg shadow-md flex flex-col gap-space-md relative overflow-hidden">
+<!-- Output Telemetry Header -->
+<div class="flex flex-wrap items-center justify-between gap-space-xs pb-space-xs bg-surface-container-low -mx-space-md -mt-space-md p-space-md md:-mx-space-lg md:-mt-space-lg md:p-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-primary"></span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">Groq LPU™ AI परामर्श रिपोर्ट</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold">
+                  Latency: 180ms ⚡
+                </span>
+<span class="hidden sm:inline-block px-space-xs py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">
+                  128 Tokens/s
+                </span>
+</div>
+</div>
+<!-- Active Crop & Farmer Summary Tag -->
+<div class="bg-surface-container p-space-sm rounded-lg flex items-center justify-between" id="reportSummaryTag">
+<div class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface">
+<span class="font-bold text-primary">फसल:</span> <span id="outCrop">गेहूं (Wheat)</span>
+<span class="text-outline">|</span>
+<span class="font-bold text-primary">स्थान:</span> <span id="outLocation">होशंगाबाद (मध्य प्रदेश)</span>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container-highest px-space-xs py-0.5 rounded text-on-surface-variant">आज का परामर्श</span>
+</div>
+<!-- Loading Skeleton (Hidden by default) -->
+<div class="hidden py-space-xl flex-col items-center justify-center gap-space-sm text-center" id="aiLoadingIndicator">
+<div class="w-12 h-12 rounded-full border-4 border-primary border-t-transparent animate-spin"></div>
+<span class="font-label-lg text-label-lg text-primary font-bold">Groq LPU इन्फ्रेंसिंग जारी है... (120+ Tokens/s)</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">ICAR एग्रोनॉमी डेटाबेस एवं मौसम पैरामीटर्स का विश्लेषण हो रहा है</span>
+</div>
+<!-- Advisory Content Sections -->
+<div class="flex flex-col gap-space-md" id="aiOutputContent">
+<!-- Section 1: प्राथमिक निदान व रोग प्रबंधन -->
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-on-surface font-bold flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-error text-[20px]">coronavirus</span>
+<span>1. 🔍 प्राथमिक निदान व रोग प्रबंधन (Diagnosis &amp; Pest Control)</span>
+</span>
+<span class="px-space-xs py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold">प्राथमिक सावधानी</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface">
+<strong class="text-on-surface font-semibold">निदान:</strong> 30-40 दिन पर निचली पत्तियों का पीलापन मुख्य रूप से <em>जिंक (Zn) की कमी</em> या आरंभिक <em>पीला रतुआ (Stripe Rust)</em> का संकेत है।
+                </p>
+<div class="bg-surface-container-lowest p-space-xs rounded font-body-sm text-body-sm text-on-surface-variant flex flex-col gap-1">
+<div><strong class="text-primary font-semibold">जैविक उपचार:</strong> नीम का तेल (Neem Oil 1500 PPM) @ 5 मिली प्रति लीटर पानी में मिलाकर शाम के समय स्प्रे करें।</div>
+<div><strong class="text-secondary font-semibold">रासायनिक सुरक्षा:</strong> पीला रतुआ के लक्षण दिखने पर <em>प्रोपिकोनाज़ोल 25% EC (Propiconazole)</em> @ 200 मिली प्रति 200 लीटर पानी प्रति एकड़ छिड़कें।</div>
+</div>
+</div>
+<!-- Section 2: खाद व उर्वरक सटीक मात्रा -->
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col gap-space-xs">
+<span class="font-label-lg text-label-lg text-on-surface font-bold flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">science</span>
+<span>2. 🌿 खाद व उर्वरक सटीक मात्रा (Nutrient &amp; Fertilizer Schedule)</span>
+</span>
+<p class="font-body-md text-body-md text-on-surface">
+                  कल्ले (Tillering) को बढ़ाने और पीलापन दूर करने हेतु पहली सिंचाई के 3-4 दिन बाद प्रति एकड़ निम्नलिखित पोषण दें:
+                </p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-xs font-body-sm text-body-sm">
+<div class="p-space-xs rounded bg-surface-container-lowest">
+<span class="font-bold text-primary">नीम कोटेड यूरिया:</span> 35 से 40 किग्रा / एकड़ (टॉप ड्रेसिंग)
+                  </div>
+<div class="p-space-xs rounded bg-surface-container-lowest">
+<span class="font-bold text-primary">जिंक सल्फेट (21%):</span> 5 किग्रा / एकड़ मिट्टी में अथवा 0.5% फोलियर स्प्रे
+                  </div>
+</div>
+</div>
+<!-- Section 3: सिंचाई एवं जल प्रबंधन -->
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col gap-space-xs">
+<span class="font-label-lg text-label-lg text-on-surface font-bold flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary-container text-[20px]">water_drop</span>
+<span>3. 💧 सिंचाई एवं जल प्रबंधन (Irrigation Guidance)</span>
+</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  गेहूं में कल्ले फूटते समय (30-40 दिन) खेत में पर्याप्त नमी आवश्यक है। भारी जलभराव से बचें, केवल 3-4 सेमी हल्की सिंचाई दें ताकि जड़ों में वायु संचार बना रहे।
+                </p>
+</div>
+<!-- Section 4: कम लागत कृषि व्यवसाय -->
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col gap-space-xs">
+<span class="font-label-lg text-label-lg text-on-surface font-bold flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">payments</span>
+<span>4. 💰 कम लागत वाले कृषि व्यवसाय विचार (Low-Cost Agri Business)</span>
+</span>
+<p class="font-body-sm text-body-sm text-on-surface">
+<strong>वर्मीकम्पोस्ट (केंचुआ खाद) अथवा ढींगरी मशरूम फार्मिंग:</strong>
+                  फसल अवशेष व गोबर से केवल ₹25,000 की शुरुआती लागत में 3 बेड लगाकर प्रति माह ₹15,000 की अतिरिक्त नियमित आय प्राप्त की जा सकती है।
+                </p>
+</div>
+<!-- Section 5: संबंधित सरकारी योजनाएं -->
+<div class="bg-surface-container-low rounded-lg p-space-sm flex flex-col gap-space-xs">
+<span class="font-label-lg text-label-lg text-on-surface font-bold flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">account_balance</span>
+<span>5. 🏛️ संबंधित सरकारी योजना (Govt Schemes Support)</span>
+</span>
+<div class="text-on-surface font-body-sm text-body-sm flex flex-col gap-1">
+<div>• <strong>PM-KISAN:</strong> ₹6,000 वार्षिक डायरेक्ट बेनिफिट ट्रांसफर (18वीं किस्त स्टेटस चेक करें)।</div>
+<div>• <strong>KCC (किसान क्रेडिट कार्ड):</strong> 4% रियायती ब्याज दर पर खाद-बीज हेतु ₹3 लाख तक की साख सीमा।</div>
+</div>
+</div>
+</div>
+<!-- Action Toolbar (Audio, Share, Print/PDF) -->
+<div class="flex flex-wrap items-center justify-between gap-space-xs pt-space-sm bg-surface-container -mx-space-md -mb-space-md p-space-md md:-mx-space-lg md:-mb-space-lg md:p-space-md">
+<button class="px-space-sm py-space-xs rounded-lg bg-surface-container-lowest text-primary font-label-md text-label-md font-bold flex items-center gap-1 hover:bg-surface-container-high transition-colors shadow-sm" onclick="readReportAloud()" type="button">
+<span class="material-symbols-outlined text-[18px]">volume_up</span>
+<span id="readReportText">🔊 आवाज में सुनें (Audio Readout)</span>
+</button>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-sm py-space-xs rounded-lg bg-primary-container text-on-primary font-label-md text-label-md font-bold flex items-center gap-1 hover:bg-primary transition-colors shadow-sm" onclick="shareOnWhatsApp()" type="button">
+<span class="material-symbols-outlined text-[18px]">share</span>
+<span>📲 WhatsApp पर भेजें</span>
+</button>
+<button class="px-space-sm py-space-xs rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md flex items-center gap-1 hover:bg-surface-container-high transition-colors shadow-sm" onclick="window.print()" type="button">
+<span class="material-symbols-outlined text-[18px]">picture_as_pdf</span>
+<span>📄 PDF डाउनलोड</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6 प्रमुख स्तंभ कार्ड्स (Key Agriculture Pillars) -->
+<section class="w-full py-space-xl bg-surface-container-low">
+<div class="max-w-[1280px] mx-auto px-margin md:px-gutter-desktop">
+<div class="text-center max-w-3xl mx-auto mb-space-lg">
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary font-bold">संपूर्ण वैज्ञानिक ढांचा</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-space-xs">
+          AI किसान सहायक के 6 प्रमुख कृषि स्तंभ
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          बीज उपचार से लेकर बाजार में बिक्री और अतिरिक्त व्यापार तक प्रत्येक चरण में तकनीकी समाधान।
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-space-md">
+<!-- Pillar 1 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col gap-space-xs">
+<div class="w-12 h-12 rounded-lg bg-primary-fixed text-on-primary-fixed flex items-center justify-center font-bold mb-space-xs">
+<span class="text-[24px]">🌾</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">1. फसल एवं खेती की संपूर्ण वैज्ञानिक सलाह</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            बुवाई का उचित समय, बीज दर, उन्नत किस्में, पंक्ति से पंक्ति की दूरी एवं अंतर्वर्ती फसलों का आधुनिक वैज्ञानिक कैलेंडर।
+          </p>
+<div class="mt-auto pt-space-xs">
+<span class="font-label-sm text-label-sm text-primary font-semibold">ICAR / IARI प्रमाणित पद्धतियां →</span>
+</div>
+</div>
+<!-- Pillar 2 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col gap-space-xs">
+<div class="w-12 h-12 rounded-lg bg-error-container text-on-error-container flex items-center justify-center font-bold mb-space-xs">
+<span class="text-[24px]">🐛</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">2. कीट एवं रोग प्रबंधन (IPM)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            एकीकृत नाशीजीव प्रबंधन, नीम तेल, फेरोमोन ट्रैप, ट्राइकोग्रामा मित्र कीट तथा सुरक्षित कीटनाशकों का सटीक डोज।
+          </p>
+<div class="mt-auto pt-space-xs">
+<span class="font-label-sm text-label-sm text-error font-semibold">कीटनाशक प्रतिरोध रोकथाम →</span>
+</div>
+</div>
+<!-- Pillar 3 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col gap-space-xs">
+<div class="w-12 h-12 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center font-bold mb-space-xs">
+<span class="text-[24px]">💧</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">3. आधुनिक सिंचाई व सूक्ष्म जल प्रबंधन</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            क्राउन रूट इनिशिएशन (CRI), पुष्पन अवस्था एवं दाना भरते समय ड्रिप व स्प्रिंकलर से 45% तक पानी व बिजली की बचत।
+          </p>
+<div class="mt-auto pt-space-xs">
+<span class="font-label-sm text-label-sm text-primary font-semibold">PMKSY हर खेत को पानी →</span>
+</div>
+</div>
+<!-- Pillar 4 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col gap-space-xs">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high text-primary flex items-center justify-center font-bold mb-space-xs">
+<span class="text-[24px]">🌿</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">4. संतुलित पोषण व खाद-उर्वरक गणक</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            NPK अनुपात 4:2:1, जिंक सल्फेट, सल्फर, बोरॉन, जीवामृत तथा नीम कोटेड यूरिया की चरणबद्ध संतुलित खुराक निर्धारण।
+          </p>
+<div class="mt-auto pt-space-xs">
+<span class="font-label-sm text-label-sm text-primary font-semibold">मृदा स्वास्थ्य कार्ड अनुकूल →</span>
+</div>
+</div>
+<!-- Pillar 5 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col gap-space-xs">
+<div class="w-12 h-12 rounded-lg bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-bold mb-space-xs">
+<span class="text-[24px]">💰</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">5. कम लागत कृषि व्यवसाय व मूल्य संवर्धन</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            मशरूम उत्पादन, मधुमक्खी पालन (Beekeeping), वर्मीकम्पोस्टिंग, दाल मिल व तेल निष्कासन से गाँव में ही अतिरिक्त आय।
+          </p>
+<div class="mt-auto pt-space-xs">
+<span class="font-label-sm text-label-sm text-secondary font-semibold">कृषि अवसंरचना कोष (AIF) लोन →</span>
+</div>
+</div>
+<!-- Pillar 6 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-shadow flex flex-col gap-space-xs">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest text-on-surface flex items-center justify-center font-bold mb-space-xs">
+<span class="text-[24px]">🏛️</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">6. सरकारी योजनाएं व सब्सिडी मार्गदर्शन</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            PM-KISAN, फसल बीमा (PMFBY), किसान क्रेडिट कार्ड (KCC 4%), सोलर कुसुम पम्प एवं कृषि यंत्रीकरण सब्सिडी फॉर्म।
+          </p>
+<div class="mt-auto pt-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">डीबीटी पोर्टल डायरेक्ट गाइड →</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- सुरक्षित सर्वर आर्किटेक्चर एवं चलाने का तरीका (Architecture & Production Code Guide) -->
+<section class="w-full py-space-xl bg-surface" id="code-architecture">
+<div class="max-w-[1280px] mx-auto px-margin md:px-gutter-desktop">
+<div class="flex flex-col gap-space-xs mb-space-lg">
+<span class="font-label-md text-label-md text-primary uppercase tracking-wider font-bold">Enterprise Security &amp; Deployment</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">
+          सुरक्षित सर्वर आर्किटेक्चर एवं चलाने का तरीका
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          100% क्लाइंट-साइड सुरक्षा: Groq API Key कभी भी ब्राउज़र में एक्सपोज़ नहीं होती।
+        </p>
+</div>
+<!-- Security Notice Card -->
+<div class="bg-surface-container-high p-space-md rounded-xl mb-space-lg flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">verified_user</span>
+</div>
+<div>
+<h4 class="font-label-lg text-label-lg text-on-surface font-bold">🔐 100% Zero Client Key-Leak Architecture</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Groq API key HTML या script.js में कभी नहीं डाली जाती। Server-side proxy 100% सुरक्षित रहता है।
+            </p>
+</div>
+</div>
+<span class="px-space-sm py-1 rounded bg-surface-container-lowest font-mono text-label-sm text-primary font-bold shrink-0">
+          process.env.GROQ_API_KEY
+        </span>
+</div>
+<!-- Visual Flow Diagram -->
+<div class="bg-inverse-surface text-inverse-on-surface p-space-md rounded-xl mb-space-lg overflow-x-auto">
+<div class="text-xs font-mono text-primary-fixed uppercase tracking-wider mb-space-xs">End-to-End Request Pipeline:</div>
+<div class="flex items-center gap-space-xs font-mono text-label-sm sm:text-body-sm whitespace-nowrap py-space-xs">
+<span class="bg-surface-container-highest/20 px-space-xs py-1 rounded text-white">[किसान का मोबाइल (Browser)]</span>
+<span class="text-primary-fixed">➔</span>
+<span class="bg-surface-container-highest/20 px-space-xs py-1 rounded text-tertiary-fixed">[/api/chat (Serverless Proxy)]</span>
+<span class="text-primary-fixed">➔</span>
+<span class="bg-surface-container-highest/20 px-space-xs py-1 rounded text-secondary-fixed">[process.env.GROQ_API_KEY]</span>
+<span class="text-primary-fixed">➔</span>
+<span class="bg-primary-container px-space-xs py-1 rounded text-on-primary font-bold">[Groq LPU (openai/gpt-oss-120b)]</span>
+</div>
+</div>
+<!-- Code & Terminal Viewer Tabs -->
+<div class="bg-surface-container-lowest rounded-xl shadow-md overflow-hidden flex flex-col">
+<!-- Tab Buttons -->
+<div class="flex items-center gap-space-xs bg-surface-container p-space-xs overflow-x-auto border-b-0">
+<button class="code-tab-btn px-space-sm py-space-xs rounded-lg font-label-md text-label-md font-bold bg-surface-container-lowest text-primary shadow-sm" onclick="switchCodeTab('tab-terminal', this)" type="button">
+            ⚡ Quick-Run Terminal
+          </button>
+<button class="code-tab-btn px-space-sm py-space-xs rounded-lg font-label-md text-label-md font-bold text-on-surface-variant hover:bg-surface-container-high" onclick="switchCodeTab('tab-server', this)" type="button">
+            server.js (Node / Express)
+          </button>
+<button class="code-tab-btn px-space-sm py-space-xs rounded-lg font-label-md text-label-md font-bold text-on-surface-variant hover:bg-surface-container-high" onclick="switchCodeTab('tab-apichat', this)" type="button">
+            api/chat.js (Groq Handler)
+          </button>
+<button class="code-tab-btn px-space-sm py-space-xs rounded-lg font-label-md text-label-md font-bold text-on-surface-variant hover:bg-surface-container-high" onclick="switchCodeTab('tab-env', this)" type="button">
+            .env.example
+          </button>
+<button class="code-tab-btn px-space-sm py-space-xs rounded-lg font-label-md text-label-md font-bold text-on-surface-variant hover:bg-surface-container-high" onclick="switchCodeTab('tab-package', this)" type="button">
+            package.json
+          </button>
+</div>
+<!-- Tab 1: Terminal Quick-Run -->
+<div class="code-tab-content p-space-md md:p-space-lg bg-inverse-surface text-inverse-on-surface font-mono text-label-sm sm:text-body-sm flex flex-col gap-space-sm" id="tab-terminal">
+<div class="flex items-center justify-between text-on-surface-variant text-xs">
+<span>BASH TERMINAL QUICK-START</span>
+<button class="text-primary-fixed hover:underline flex items-center gap-1" onclick="copySnippet('terminal-code')" type="button">
+<span class="material-symbols-outlined text-[14px]">content_copy</span> कॉपी कमांड
+            </button>
+</div>
+<pre class="overflow-x-auto whitespace-pre leading-relaxed text-inverse-on-surface" id="terminal-code"># 1. रिपॉजिटरी क्लोन करें अथवा अनज़िप करें
+git clone https://github.com/example/ai-kisan-sahayak.git
+cd ai-kisan-sahayak
+
+# 2. आवश्यक डिपेंडेंसी इंस्टॉल करें
+npm install
+
+# 3. पर्यावरण चर (Environment Variables) कॉन्फ़िगर करें
+cp .env.example .env
+# .env में अपनी निःशुल्क Groq API Key जोड़ें: https://console.groq.com/keys
+
+# 4. सर्वर चालू करें
+npm start
+
+# 5. ब्राउज़र में लाइव खोलें
+open http://localhost:3000</pre>
+</div>
+<!-- Tab 2: server.js -->
+<div class="code-tab-content hidden p-space-md md:p-space-lg bg-inverse-surface text-inverse-on-surface font-mono text-label-sm sm:text-body-sm flex flex-col gap-space-sm" id="tab-server">
+<div class="flex items-center justify-between text-on-surface-variant text-xs">
+<span>EXPRESS SERVER PROXY (server.js)</span>
+<button class="text-primary-fixed hover:underline flex items-center gap-1" onclick="copySnippet('server-code')" type="button">
+<span class="material-symbols-outlined text-[14px]">content_copy</span> कॉपी कोड
+            </button>
+</div>
+<pre class="overflow-x-auto whitespace-pre leading-relaxed text-primary-fixed" id="server-code">import express from 'express';
+import dotenv from 'dotenv';
+import cors from 'cors';
+import chatHandler from './api/chat.js';
+
+dotenv.config();
+
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+app.use(cors());
+app.use(express.json());
+app.use(express.static('public'));
+
+// Zero Key-Leak Server Proxy Endpoint
+app.post('/api/chat', chatHandler);
+
+app.listen(PORT, () =&gt; {
+  console.log(`🌾 AI Kisan Sahayak Running: http://localhost:${PORT}`);
+});</pre>
+</div>
+<!-- Tab 3: api/chat.js -->
+<div class="code-tab-content hidden p-space-md md:p-space-lg bg-inverse-surface text-inverse-on-surface font-mono text-label-sm sm:text-body-sm flex flex-col gap-space-sm" id="tab-apichat">
+<div class="flex items-center justify-between text-on-surface-variant text-xs">
+<span>GROQ SDK CONTROLLER (api/chat.js)</span>
+<button class="text-primary-fixed hover:underline flex items-center gap-1" onclick="copySnippet('apichat-code')" type="button">
+<span class="material-symbols-outlined text-[14px]">content_copy</span> कॉपी कोड
+            </button>
+</div>
+<pre class="overflow-x-auto whitespace-pre leading-relaxed text-tertiary-fixed" id="apichat-code">import Groq from 'groq-sdk';
+
+const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
+
+export default async function handler(req, res) {
+  try {
+    const { crop, location, soil, irrigation, problem } = req.body;
+
+    const systemPrompt = `आप 'AI किसान सहायक' हैं — भारतीय कृषि अनुसंधान परिषद (ICAR) व KVK मानकों पर आधारित विशेषज्ञ।
+    सरल, व्यावहारिक व प्रमाणिक हिंदी में 5 भागों में जवाब दें:
+    1. प्राथमिक निदान व कीट-रोग प्रबंधन (जैविक + रासायनिक मात्रा सहित)
+    2. संतुलित खाद व उर्वरक खुराक (प्रति एकड़ यूरिया/डीएपी/जिंक)
+    3. सटीक सिंचाई अवस्था
+    4. कम लागत कृषि व्यवसाय विचार (मशरूम, वर्मीकम्पोस्ट आदि)
+    5. संबंधित सरकारी योजना (PM-KISAN, KCC आदि)`;
+
+    const completion = await groq.chat.completions.create({
+      model: process.env.GROQ_MODEL || 'openai/gpt-oss-120b',
+      messages: [
+        { role: 'system', content: systemPrompt },
+        { role: 'user', content: `फसल: ${crop}, स्थान: ${location}, मिट्टी: ${soil}, सिंचाई: ${irrigation}, प्रश्न: ${problem}` }
+      ],
+      temperature: 0.2,
+      max_tokens: 1500
+    });
+
+    res.json({ response: completion.choices[0].message.content });
+  } catch (error) {
+    console.error('Groq LPU Error:', error);
+    res.status(500).json({ error: 'कृषि सलाहकार सर्वर प्रतिक्रिया में त्रुटि' });
+  }
+}</pre>
+</div>
+<!-- Tab 4: .env.example -->
+<div class="code-tab-content hidden p-space-md md:p-space-lg bg-inverse-surface text-inverse-on-surface font-mono text-label-sm sm:text-body-sm flex flex-col gap-space-sm" id="tab-env">
+<div class="flex items-center justify-between text-on-surface-variant text-xs">
+<span>ENVIRONMENT CONFIGURATION (.env.example)</span>
+<button class="text-primary-fixed hover:underline flex items-center gap-1" onclick="copySnippet('env-code')" type="button">
+<span class="material-symbols-outlined text-[14px]">content_copy</span> कॉपी
+            </button>
+</div>
+<pre class="overflow-x-auto whitespace-pre leading-relaxed text-secondary-fixed" id="env-code"># GroqCloud API Key (https://console.groq.com)
+GROQ_API_KEY=gsk_your_groq_api_key_here
+
+# Ultra-Low Latency Model
+GROQ_MODEL=openai/gpt-oss-120b
+
+# Local Server Port
+PORT=3000</pre>
+</div>
+<!-- Tab 5: package.json -->
+<div class="code-tab-content hidden p-space-md md:p-space-lg bg-inverse-surface text-inverse-on-surface font-mono text-label-sm sm:text-body-sm flex flex-col gap-space-sm" id="tab-package">
+<div class="flex items-center justify-between text-on-surface-variant text-xs">
+<span>NODE DEPENDENCIES (package.json)</span>
+<button class="text-primary-fixed hover:underline flex items-center gap-1" onclick="copySnippet('package-code')" type="button">
+<span class="material-symbols-outlined text-[14px]">content_copy</span> कॉपी
+            </button>
+</div>
+<pre class="overflow-x-auto whitespace-pre leading-relaxed text-inverse-on-surface" id="package-code">{
+  "name": "ai-kisan-sahayak",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "groq-sdk": "^0.3.3"
+  }
+}</pre>
+</div>
+</div>
+</div>
+</section>
+<!-- भविष्य का रोडमैप (Future v2.0 Roadmap Callout) -->
+<section class="w-full py-space-xl bg-surface-container-high">
+<div class="max-w-[1280px] mx-auto px-margin md:px-gutter-desktop">
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-md flex flex-col lg:flex-row items-center justify-between gap-space-lg">
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<div class="inline-flex items-center gap-space-xs self-start px-space-xs py-0.5 rounded-full bg-secondary-fixed text-on-secondary-container font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[16px]">rocket_launch</span>
+<span>🌟 आगामी संस्करण (v2.0 Preview Roadmap)</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">
+            स्मार्ट विज़न + लाइव मंडी भाव + KVK टेली-परामर्श डैशबोर्ड
+          </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            "फसल + राज्य + जिला + जमीन + मौसम + बीमारी की फोटो अपलोड ➔ AI Diagnosis + सरकारी योजना + मंडी भाव + मौसम + स्थानीय KVK सलाह एक ही डैशबोर्ड में!"
+          </p>
+<div class="flex flex-wrap gap-space-xs pt-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="bg-surface-container px-space-xs py-1 rounded">📸 कैमरा पत्ती रोग पहचान</span>
+<span class="bg-surface-container px-space-xs py-1 rounded">📈 e-NAM लाइव मंडी API</span>
+<span class="bg-surface-container px-space-xs py-1 rounded">🌦️ मौसम पूर्वानुमान (IMD)</span>
+<span class="bg-surface-container px-space-xs py-1 rounded">🗣️ 12 भारतीय क्षेत्रीय भाषाएँ</span>
+</div>
+</div>
+<div class="shrink-0 w-full lg:w-auto">
+<button class="w-full lg:w-auto px-space-lg py-space-sm rounded-lg bg-primary text-on-primary font-label-md text-label-md font-bold hover:bg-primary-container transition-colors shadow-sm text-center" onclick="alert('v2.0 बीटा अर्ली एक्सेस सूची में आपका पंजीकरण हो गया है!')" type="button">
+            अर्ली एक्सेस बीटा में शामिल हों
+          </button>
+</div>
+</div>
+</div>
+</section>
+<!-- हेल्पलाइन व आधिकारिक संपर्क बार -->
+<section class="w-full py-space-lg bg-surface border-t-0">
+<div class="max-w-[1280px] mx-auto px-margin md:px-gutter-desktop">
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md">
+<div class="flex items-center gap-space-sm p-space-sm bg-surface-container rounded-lg">
+<div class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">call</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">राष्ट्रीय किसान कॉल सेंटर</span>
+<span class="font-label-lg text-label-lg text-primary font-bold">1800-180-1551 (टोल-फ्री)</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm p-space-sm bg-surface-container rounded-lg">
+<div class="w-10 h-10 rounded-full bg-secondary text-on-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">storefront</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">राष्ट्रीय कृषि बाजार पोर्टल</span>
+<span class="font-label-lg text-label-lg text-secondary font-bold">enam.gov.in मंडी सहायता</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm p-space-sm bg-surface-container rounded-lg">
+<div class="w-10 h-10 rounded-full bg-tertiary-container text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">local_hospital</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">निकटतम KVK वैज्ञानिक केंद्र</span>
+<span class="font-label-lg text-label-lg text-primary font-bold">731+ जिले संबद्ध</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Logic Script -->
+<script>
+    // Tab switching for code samples
+    function switchCodeTab(tabId, el) {
+      document.querySelectorAll('.code-tab-content').forEach(tab => tab.classList.add('hidden'));
+      document.querySelectorAll('.code-tab-btn').forEach(btn => {
+        btn.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+        btn.classList.add('text-on-surface-variant');
+      });
+      const target = document.getElementById(tabId);
+      if (target) target.classList.remove('hidden');
+      el.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+      el.classList.remove('text-on-surface-variant');
+    }
+
+    // Copy to clipboard helper
+    function copySnippet(elementId) {
+      const code = document.getElementById(elementId).innerText;
+      navigator.clipboard.writeText(code).then(() => {
+        alert('कोड क्लिपबोर्ड में कॉपी किया गया!');
+      });
+    }
+
+    // Crop Selector helper
+    function selectCrop(cropName, btn) {
+      document.querySelectorAll('.crop-btn').forEach(b => {
+        b.classList.remove('bg-primary-container', 'text-on-primary');
+        b.classList.add('bg-surface-container', 'text-on-surface');
+      });
+      btn.classList.remove('bg-surface-container', 'text-on-surface');
+      btn.classList.add('bg-primary-container', 'text-on-primary');
+      document.getElementById('selectedCropInput').value = cropName;
+      document.getElementById('outCrop').innerText = cropName;
+    }
+
+    // Preset Chip setter
+    function setPreset(queryText) {
+      const textarea = document.getElementById('farmerQuery');
+      textarea.value = queryText;
+      textarea.focus();
+    }
+
+    // Auto-detect GPS simulation
+    function autoDetectLocation() {
+      const locInput = document.getElementById('farmerLocation');
+      locInput.value = "ग्राम-रामनगर, जिला-वाराणसी (उत्तर प्रदेश) [GPS Verified]";
+      document.getElementById('outLocation').innerText = "वाराणसी (उत्तर प्रदेश)";
+      alert('निकटतम KVK क्षेत्र: वाराणसी केंद्र सफलतापूर्वक पहचाना गया।');
+    }
+
+    // Voice Input Simulator
+    let isRecording = false;
+    function toggleVoiceInput() {
+      const voiceText = document.getElementById('voiceText');
+      const voiceBtn = document.getElementById('voiceBtn');
+      if (!isRecording) {
+        isRecording = true;
+        voiceText.innerText = "सुन रहे हैं... बोलिए";
+        voiceBtn.classList.remove('bg-secondary-fixed');
+        voiceBtn.classList.add('bg-error', 'text-on-error', 'animate-pulse');
+        
+        setTimeout(() => {
+          document.getElementById('farmerQuery').value = "गेहूं में खरपतवार बहुत हो गया है और बालियां आने से पहले पोटाश कब और कितना डालें?";
+          isRecording = false;
+          voiceText.innerText = "🎙️ बोलकर पूछें (Hindi Voice)";
+          voiceBtn.classList.add('bg-secondary-fixed');
+          voiceBtn.classList.remove('bg-error', 'text-on-error', 'animate-pulse');
+        }, 3200);
+      } else {
+        isRecording = false;
+        voiceText.innerText = "🎙️ बोलकर पूछें (Hindi Voice)";
+        voiceBtn.classList.add('bg-secondary-fixed');
+        voiceBtn.classList.remove('bg-error', 'text-on-error', 'animate-pulse');
+      }
+    }
+
+    // AI Inference Simulator
+    function runAiInference() {
+      const crop = document.getElementById('selectedCropInput').value;
+      const location = document.getElementById('farmerLocation').value;
+      const loading = document.getElementById('aiLoadingIndicator');
+      const content = document.getElementById('aiOutputContent');
+      const btn = document.getElementById('generateBtn');
+
+      document.getElementById('outCrop').innerText = crop;
+      document.getElementById('outLocation').innerText = location.split(',')[1] || location;
+
+      btn.disabled = true;
+      btn.innerHTML = `<span class="material-symbols-outlined animate-spin text-[20px]">sync</span><span>Groq LPU इन्फ्रेंस जारी है...</span>`;
+      content.classList.add('opacity-30');
+      loading.classList.remove('hidden');
+      loading.classList.add('flex');
+
+      setTimeout(() => {
+        loading.classList.add('hidden');
+        loading.classList.remove('flex');
+        content.classList.remove('opacity-30');
+        btn.disabled = false;
+        btn.innerHTML = `<span class="material-symbols-outlined text-[22px]">psychology</span><span>🌾 Groq AI से तुरंत सटीक समाधान प्राप्त करें (0.2s ⚡)</span>`;
+      }, 350);
+    }
+
+    // Audio Readout Simulator
+    let isSpeaking = false;
+    function readReportAloud() {
+      const readText = document.getElementById('readReportText');
+      if (!isSpeaking) {
+        if ('speechSynthesis' in window) {
+          const utterance = new SpeechSynthesisUtterance("AI किसान सहायक परामर्श। गेहूं की फसल में प्राथमिक निदान: कल्ले फूटते समय जिंक सल्फेट 5 किलो और नीम कोटेड यूरिया 35 किलो प्रति एकड़ प्रयोग करें।");
+          utterance.lang = 'hi-IN';
+          window.speechSynthesis.speak(utterance);
+        }
+        isSpeaking = true;
+        readText.innerText = "⏹️ आवाज रोकें";
+      } else {
+        if ('speechSynthesis' in window) {
+          window.speechSynthesis.cancel();
+        }
+        isSpeaking = false;
+        readText.innerText = "🔊 आवाज में सुनें (Audio Readout)";
+      }
+    }
+
+    // Share on WhatsApp
+    function shareOnWhatsApp() {
+      const crop = document.getElementById('selectedCropInput').value;
+      const loc = document.getElementById('farmerLocation').value;
+      const text = encodeURIComponent(`🌾 *AI किसान सहायक परामर्श रिपोर्ट*\nफसल: ${crop}\nक्षेत्र: ${loc}\n\nसटीक खाद व कीट सलाह तुरंत Groq LPU से प्राप्त हुई है। टोल-फ्री हेल्पलाइन: 1800-180-1551`);
+      window.open(`https://api.whatsapp.com/send?text=${text}`, '_blank');
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-low mt-space-xl shadow-[0_-1px_8px_rgba(0,0,0,0.02)]"><div class="max-w-[1280px] mx-auto px-margin md:px-gutter-desktop py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-lg mb-space-lg"><div class="flex flex-col gap-space-sm"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-primary">🌾 AI किसान सहायक</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">ग्रामीण भारत के प्रत्येक किसान के लिए अत्याधुनिक LPU AI से त्वरित, सटीक और वैज्ञानिक कृषि मार्गदर्शन।</p><div class="flex items-center gap-space-xs mt-space-xs"><span class="material-symbols-outlined text-primary text-[20px]">verified</span><span class="font-label-sm text-label-sm text-on-surface">ICAR / KVK प्रमाणित पद्धतियाँ</span></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-tertiary-container text-[20px]">security</span><span class="font-label-sm text-label-sm text-on-surface">100% Zero Key-Leak Serverless Proxy</span></div></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-on-surface font-bold">महत्वपूर्ण सरकारी योजनाएं</span><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-primary transition-colors" href="#">प्रधानमंत्री किसान सम्मान निधि (PM-KISAN)</a></li><li><a class="hover:text-primary transition-colors" href="#">प्रधानमंत्री फसल बीमा योजना (PMFBY)</a></li><li><a class="hover:text-primary transition-colors" href="#">मृदा स्वास्थ्य कार्ड योजना (Soil Health Card)</a></li><li><a class="hover:text-primary transition-colors" href="#">राष्ट्रीय कृषि बाजार (e-NAM Portal)</a></li><li><a class="hover:text-primary transition-colors" href="#">कृषि सिंचाई योजना (PMKSY)</a></li></ul></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-on-surface font-bold">सहायता व आपातकालीन संपर्क</span><ul class="flex flex-col gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><li><span class="font-bold text-on-surface">किसान कॉल सेंटर:</span> 1800-180-1551</li><li><span class="font-bold text-on-surface">ईमेल:</span> kisan-support@gov.in</li><li><span class="font-bold text-on-surface">मौसम अलर्ट सेवा:</span> IMD Meghdoot Sync</li><li><span class="font-bold text-on-surface">Groq Model:</span> openai/gpt-oss-120b</li></ul></div><div class="flex flex-col gap-space-sm"><span class="font-label-lg text-label-lg text-on-surface font-bold">तकनीक एवं अनुपालन</span><div class="p-space-sm rounded-lg bg-surface-container flex flex-col gap-space-xs"><span class="font-label-sm text-label-sm text-primary font-bold">GroqCloud API High-Speed Inference</span><p class="font-body-sm text-body-sm text-on-surface-variant">अल्ट्रा-फास्ट LPU इन्फ्रेंसिंग तकनीक के माध्यम से बिना किसी लेटेंसी के हिंदी एवं प्रादेशिक बोलियों में जवाब।</p></div><div class="text-on-surface-variant font-label-sm text-label-sm">ऑफलाइन PWA कैशिंग सक्षम</div></div></div><div class="pt-space-md border-t border-outline-variant/30 flex flex-col sm:flex-row items-center justify-between gap-space-sm font-label-sm text-label-sm text-on-surface-variant"><p>© 2025 AI किसान सहायक (AI Kisan Sahayak) - सर्वाधिकार सुरक्षित। भारतीय किसानों के स्वावलंबन हेतु समर्पित।</p><div class="flex items-center gap-space-md"><a class="hover:text-primary transition-colors" href="#">गोपनीयता नीति</a><a class="hover:text-primary transition-colors" href="#">नियम एवं शर्तें</a><a class="hover:text-primary transition-colors" href="#">API स्टेटस</a></div></div></div></footer></body></html>
